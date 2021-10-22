@@ -5,3 +5,5 @@ function paperwork(n, m) {
       return 0;
     }
 }
+
+return n > 0 && m > 0 ? n * m : 0
