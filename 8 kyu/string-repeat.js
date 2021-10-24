@@ -1,11 +1,15 @@
 function repeatStr (n, s) {
-    let newStr = '';
+  // single line solution:
+  return s.repeat(n);
+
+  // Previous solution:
+  // let newStr = '';
     
-    for (i = 0; i < n; i++){
-      newStr += s;
-    }
+  // for (i = 0; i < n; i++){
+  //   newStr += s;
+  // }
     
-    return newStr;
+  // return newStr;
 }
 
 // Tests
