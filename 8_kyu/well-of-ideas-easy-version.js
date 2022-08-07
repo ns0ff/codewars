@@ -1,10 +1,10 @@
 // https://www.codewars.com/kata/57f222ce69e09c3630000212
 
 // Filter:
-const well = (x) => {
-    const counter = x.filter(el => el === 'good').length
-    return counter === 0 ?  'Fail!' : counter < 3 ? 'Publish!' : 'I smell a series!'
-}
+// const well = (x) => {
+//     const counter = x.filter(el => el === 'good').length
+//     return counter === 0 ?  'Fail!' : counter < 3 ? 'Publish!' : 'I smell a series!'
+// }
 
 // For loop:
 // function well(x){
@@ -36,6 +36,12 @@ const well = (x) => {
 //           return 'I smell a series!'
 //     }
 // }
+
+// Reduce
+const well = (x) => {
+    const counter = x.reduce((a, b) => a + (b === 'good'), 0);
+    return counter ? counter > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
+}
 
 // Output:
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good'])); // Expected output: 'I smell a series!'
