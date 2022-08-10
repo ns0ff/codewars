@@ -7,7 +7,7 @@
 // const fakeBin = (x) => x.replace(/\d/g, d => d < 5 ? 0 : 1);
 
 // Reduce
-const fakeBin = (x) => [...x].reduce((a, b) => a + + (b >= 5), ``);
+const fakeBin = (x) => [...x].reduce((a, b) => a + +(b >= 5), ``);
 
 
 // Output:
